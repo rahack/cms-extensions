@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="system" method="upgrade">
+    <name>Installer</name>
+	<author/>
+	<creationDate/>
+	<copyright/>
+	<license/>
+	<authorEmail/>
+	<authorUrl/>
+	<version>1.0.0</version>
+	<description>Upage for Joomla! v1.0.0</description>
+    <scriptfile>install.script.php</scriptfile>
+    <files>
+        <filename plugin="installer">installer.php</filename>
+    </files>
+    <items>
+        <item type="component" client="administrator" access="0" enabled="true" protected="false">
+            <dirname>com_upage</dirname>
+            <name>Nicepage Component</name>
+            <description>Nicepage Component for Joomla</description>
+        </item>
+        <item type="plugin" client="site" ordering="5" access="1" enabled="true" protected="false">
+            <dirname>plg_editors-xtd_upage</dirname>
+            <name>Nicepage Editor Button Plugin</name>
+            <description>Nicepage Editor Button Plugin for Joomla</description>
+        </item>
+        <item type="plugin" client="site" ordering="50" access="1" enabled="true" protected="false">
+            <dirname>plg_content_upage</dirname>
+            <name>Nicepage Content Plugin</name>
+            <description>Nicepage Content Plugin for Joomla</description>
+        </item>
+        <item type="module" client="administrator">
+            <dirname>mod_upagemenu</dirname>
+            <name>Nicepage Administrator Menu Module</name>
+            <description>Nicepage Administrator Menu Module for Joomla</description>
+            <module client="administrator" position="menu"  ordering="10" published="true" title="Nicepage Administrator Menu" access="3" assigned="all"/>
+        </item>
+    </items>
+</extension>

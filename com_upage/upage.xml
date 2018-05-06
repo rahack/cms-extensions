@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="2.5.0" method="upgrade">
+	<name>COM_UPAGE</name>
+	<creationDate>2016-09-01</creationDate>
+	<author />
+	<authorEmail />
+	<authorUrl />
+	<copyright />
+	<license />
+	<version>1.0.0</version>
+	<description>COM_UPAGE_DESCRIPTION</description>
+    <scriptfile>install.script.php</scriptfile>
+	<install>
+  		<sql>
+    		<file charset="utf8" driver="mysql">install.mysql.sql</file>
+  		</sql>
+	</install>
+
+	<scriptfile>install.php</scriptfile>
+
+	<files folder="site">
+		<filename>upage.php</filename>
+		<filename>controller.php</filename>
+	</files>
+
+	<administration>
+		<menu>COM_UPAGE</menu>
+		<submenu>
+			<menu link="option=com_upage&amp;dashboard=1"	alt="Upage/Run editor">COM_UPAGE_EDITOR</menu>
+			<menu link="option=com_upage&amp;view=import" alt="Upage/Import Data">COM_UPAGE_IMPORT</menu>
+			<menu link="option=com_upage&amp;view=config" alt="Upage/Import Data">COM_UPAGE_CONFIGURATION</menu>
+		</submenu>
+		<files folder="admin">
+            <folder>assets</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>languages</folder>
+			<folder>models</folder>
+			<folder>views</folder>
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>upage.php</filename>
+			<filename>index.html</filename>
+			<filename>install.mysql.sql</filename>
+		</files>
+
+		<languages folder="admin">
+			<language tag="en-GB">languages/en-GB/en-GB.com_upage.ini</language>
+			<language tag="en-GB">languages/en-GB/en-GB.com_upage.sys.ini</language>
+		</languages>
+
+	</administration>
+	
+</extension>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5"	client="administrator" method="upgrade">
+	<name>Nicepage Administrator Menu</name>
+    <creationDate/>
+    <author/>
+    <authorEmail/>
+    <authorUrl/>
+    <copyright/>
+    <license/>
+    <version/>
+	<description/>
+	<files>
+		<filename module="mod_upagemenu">mod_upagemenu.php</filename>
+		<filename>helper.php</filename>
+		<folder>tmpl</folder>
+	</files>
+    <config>
+    <fields name="params">
+    <fieldset name="advanced">
+    <!--field
+            name="show_upagemenu"
+            type="list"
+            default="1"
+            label="MOD_UPAGEMENU_FIELD_SHOW_UPAGEMENU"
+            description="MOD_UPAGEMENU_FIELD_SHOW_UPAGEMENU_DESC">
+        <option value="0">JHIDE</option>
+        <option value="1">JSHOW</option>
+    </field-->
+    </fieldset>
+    </fields>
+    </config>
+</extension>
